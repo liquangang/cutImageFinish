@@ -64,6 +64,15 @@
     [_overView setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height )];
     [self.view addSubview:_overView];
     
+//    //遮罩
+//    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+//    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+//    UIImageView *maskImageView = [[UIImageView alloc] initWithFrame:CGRectMake(30, screenHeight / 4, screenWidth - 60, screenHeight / 2)];
+//    maskImageView.image = [UIImage imageNamed:@"timg-3"];
+//    maskImageView.contentMode = UIViewContentModeScaleAspectFit;
+//    [_overView addSubview:maskImageView];
+    
+    
     UIButton * clipBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [clipBtn setTitle:@"裁剪" forState:UIControlStateNormal];
     [clipBtn addTarget:self action:@selector(clipBtnSelected:) forControlEvents:UIControlEventTouchUpInside];
